@@ -23,20 +23,3 @@ class JobA:
 
 class JobB:
     pass
-
-
-# iterate over Sheet and combine booth strings with a "-" in the middle
-class Sheet:
-    def __init__(self, data: list[str, str]):
-        self.__data: list = data
-
-
-def process():
-    pass
-
-
-# make 100 GET request on google.com and print the http status code, on a http error stop the execusion and print the status test
-#...
-
-
-# create a postgres connection with psycopg3 and query a table test like you would do in production environment
