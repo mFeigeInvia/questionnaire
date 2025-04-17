@@ -1,8 +1,25 @@
-# iterate over Sheet and combine both strings with a "-" in the middle
-class Sheet:
-    def __init__(self, data: list[dict(str, str)]):
-        self.__data: list = data
+# coding=utf-8
+
+# Job A and B should request API source, A should store the result in DestDatabase and B in DestS3
+class APISource:
+    def __init__(self):
+        self.__client = None  # e.g. facebook client
+
+    def get(self) -> list:
+        return ['a', 'b', 'c']
+
+class DestDatabase:
+    def store_data(self) -> None:
+        pass  # no need to be implemented
+
+class DestS3:
+    def store_data(self) -> None:
+        pass  # no need to be implemented
 
 
-def process():
+class JobA:
+    pass
+
+
+class JobB:
     pass
